@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins'
+}
+
+a {
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #6B72E1;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, p {
+  color: #575F7D;
+}
+
+ul li a {
+  font-size: 3em;
+  color: #3b5998;
+}
+
+.img-circle {
+  border-radius: 25%;
+}
+.text-center {
+  text-align: center;
+}
+.card-white {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/*.btn-blue {
+    background-color: #6B72E1;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.btn-blue:hover {
+  background-color: #574F7E;
+}*/
+
+.btn-blue {
+    color: white;
+    padding: 12px 18px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.btn-blue:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn-blue:active {
+    color: #6B72E1
+}
+
+.btn-blue:active:after {
+    background: transparent;
+}
+
+.btn-blue:hover:before {
+    opacity: 1;
+}
+
+.btn-blue:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #212F3D;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
